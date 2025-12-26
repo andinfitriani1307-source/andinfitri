@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cream Elegant Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Red Portfolio</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -13,9 +13,9 @@
       theme: {
         extend: {
           colors: {
-            cream: '#fdf6ec',
-            primary: '#7c6f64',
-            accent: '#d6bfa6'
+            primary: '#7f1d1d',   // merah tua
+            secondary: '#991b1b',
+            soft: '#fef2f2'
           }
         }
       }
@@ -23,28 +23,190 @@
   </script>
 </head>
 
-<body class="font-sans text-gray-700 scroll-smooth bg-cream">
+<body class="font-sans text-gray-700 scroll-smooth bg-soft">
 
 <!-- ================= HEADER ================= -->
-<header class="fixed top-0 w-full bg-cream/90 backdrop-blur shadow z-50">
+<header class="fixed top-0 w-full bg-white shadow z-50">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-semibold text-primary">MyPortfolio</h1>
-    <nav class="hidden md:flex space-x-6 text-sm">
-      <a href="#home" class="hover:text-accent">Home</a>
-      <a href="#about" class="hover:text-accent">About</a>
-      <a href="#services" class="hover:text-accent">Services</a>
-      <a href="#projects" class="hover:text-accent">Projects</a>
-      <a href="#contact" class="hover:text-accent">Contact</a>
+    <h1 class="text-2xl font-bold text-primary">MyPortfolio</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-secondary">Home</a>
+      <a href="#about" class="hover:text-secondary">About</a>
+      <a href="#services" class="hover:text-secondary">Services</a>
+      <a href="#projects" class="hover:text-secondary">Projects</a>
+      <a href="#contact" class="hover:text-secondary">Contact</a>
     </nav>
   </div>
 </header>
 
 <!-- ================= HOME ================= -->
-<section id="home" class="min-h-screen flex items-center bg-cover bg-center relative"
-style="background-image:url('https://images.unsplash.com/photo-1526045612212-70caf35c14df');">
-  <div class="absolute inset-0 bg-cream/80"></div>
-  <div class="container mx-auto px-6 relative z-10 text-center">
-    <h2 class="text-5xl font-light text-primary mb-4">
-      Elegant & Timeless Portfolio
-    </h2>
-    <p clas
+<section id="home"
+  class="min-h-screen flex items-center bg-cover bg-center relative"
+  style="background-image:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d');">
+
+  <div class="absolute inset-0 bg-primary/80"></div>
+
+  <div class="container mx-auto px-6 relative z-10 text-center text-white">
+    <h2 class="text-5xl font-bold mb-4">Professional Portfolio</h2>
+    <p class="text-lg mb-6">Strong • Elegant • Trustworthy</p>
+    <a href="#contact"
+       class="bg-secondary px-8 py-3 rounded-full font-semibold hover:bg-red-900 transition">
+      Contact Me
+    </a>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20 container mx-auto px-6">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+         class="rounded-xl shadow-lg">
+    <div>
+      <h3 class="text-3xl font-bold text-primary mb-4">About Me</h3>
+      <p>
+        Saya adalah web developer yang berfokus pada pembuatan website modern,
+        profesional, dan scalable untuk kebutuhan personal maupun bisnis.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-20 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-primary mb-12">Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 bg-soft rounded-xl shadow">
+        <h4 class="font-semibold text-lg mb-2">Web Design</h4>
+        <p>Desain profesional & modern.</p>
+      </div>
+      <div class="p-8 bg-soft rounded-xl shadow">
+        <h4 class="font-semibold text-lg mb-2">Development</h4>
+        <p>Website cepat dan aman.</p>
+      </div>
+      <div class="p-8 bg-soft rounded-xl shadow">
+        <h4 class="font-semibold text-lg mb-2">Maintenance</h4>
+        <p>Dukungan dan perawatan website.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="py-20 container mx-auto px-6">
+  <h3 class="text-3xl font-bold text-primary text-center mb-10">Features</h3>
+  <div class="grid md:grid-cols-4 gap-6 text-center">
+    <div class="p-6 bg-white rounded shadow">Fast Performance</div>
+    <div class="p-6 bg-white rounded shadow">Responsive Design</div>
+    <div class="p-6 bg-white rounded shadow">Secure System</div>
+    <div class="p-6 bg-white rounded shadow">Modern UI</div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="py-20 bg-white">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-primary text-center mb-12">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="rounded shadow">
+      <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93" class="rounded shadow">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="rounded shadow">
+    </div>
+  </div>
+</section>
+
+<!-- ================= TEAM ================= -->
+<section class="py-20 container mx-auto px-6 text-center">
+  <h3 class="text-3xl font-bold text-primary mb-12">Team</h3>
+  <div class="grid md:grid-cols-3 gap-8">
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/45.jpg"
+           class="mx-auto rounded-full mb-4">
+      <h4 class="font-semibold">Michael</h4>
+      <p>Developer</p>
+    </div>
+    <div>
+      <img src="https://randomuser.me/api/portraits/women/62.jpg"
+           class="mx-auto rounded-full mb-4">
+      <h4 class="font-semibold">Sophia</h4>
+      <p>Designer</p>
+    </div>
+    <div>
+      <img src="https://randomuser.me/api/portraits/men/78.jpg"
+           class="mx-auto rounded-full mb-4">
+      <h4 class="font-semibold">Daniel</h4>
+      <p>Marketing</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="py-20 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-primary mb-12">Pricing</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-8 bg-soft rounded shadow">Basic</div>
+      <div class="p-8 bg-soft rounded shadow border-2 border-secondary">Pro</div>
+      <div class="p-8 bg-soft rounded shadow">Enterprise</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="py-20 container mx-auto px-6 text-center">
+  <h3 class="text-3xl font-bold text-primary mb-6">Testimonials</h3>
+  <p class="italic max-w-xl mx-auto">
+    “Website yang dibuat sangat profesional dan meningkatkan kepercayaan klien kami.”
+  </p>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="py-20 bg-white text-center">
+  <h3 class="text-3xl font-bold text-primary mb-4">FAQ</h3>
+  <p>Pertanyaan umum seputar layanan.</p>
+</section>
+
+<!-- ================= BLOG ================= -->
+<section class="py-20 container mx-auto px-6 text-center">
+  <h3 class="text-3xl font-bold text-primary mb-4">Blog</h3>
+  <p>Artikel terbaru tentang teknologi dan bisnis digital.</p>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-20 bg-white">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-primary mb-6">Contact</h3>
+    <form class="max-w-md mx-auto space-y-4">
+      <input class="w-full p-3 border rounded" placeholder="Name">
+      <input class="w-full p-3 border rounded" placeholder="Email">
+      <textarea class="w-full p-3 border rounded" placeholder="Message"></textarea>
+      <button class="bg-secondary text-white px-6 py-3 rounded-full hover:bg-red-900">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-primary text-white py-6 text-center">
+  © 2025 MyPortfolio. All Rights Reserved.
+</footer>
+
+<!-- ================= BACK TO TOP ================= -->
+<button id="backToTop"
+class="hidden fixed bottom-6 right-6 bg-secondary text-white px-4 py-2 rounded-full shadow-lg">
+↑ Top
+</button>
+
+<script>
+  const btn = document.getElementById("backToTop");
+  window.addEventListener("scroll", () => {
+    btn.classList.toggle("hidden", window.scrollY < 300);
+  });
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
+
+</body>
+</html>
