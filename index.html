@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Portfolio Landing Page</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0f172a',   // biru tua
+            secondary: '#1e3a8a'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-sans text-gray-700 scroll-smooth">
+
+<!-- ================= HEADER ================= -->
+<header class="fixed top-0 w-full bg-white shadow z-50">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-primary">MyPortfolio</h1>
+    <nav class="hidden md:flex space-x-6">
+      <a href="#home" class="hover:text-secondary">Home</a>
+      <a href="#about" class="hover:text-secondary">About</a>
+      <a href="#services" class="hover:text-secondary">Services</a>
+      <a href="#projects" class="hover:text-secondary">Project</a>
+      <a href="#contact" class="hover:text-secondary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home" class="min-h-screen flex items-center bg-cover bg-center relative"
+style="background-image:url('https://images.unsplash.com/photo-1508780709619-79562169bc64');">
+  <div class="absolute inset-0 bg-primary/80"></div>
+  <div class="container mx-auto px-6 relative z-10 text-white text-center">
+    <h2 class="text-5xl font-bold mb-4">Professional Blue Portfolio</h2>
+    <p class="text-lg mb-6">Clean • Modern • Trusted Solution</p>
+    <a href="#contact" class="bg-secondary px-8 py-3 rounded-full font-semibold hover:bg-blue-900">
+      Contact Me
+    </a>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-20 container mx-auto px-6">
+  <div class="grid md:grid-cols-2 gap-10 items-center">
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978"
+         class="rounded-lg shadow">
+    <div>
+      <h3 class="text-3xl font-bold text-primary mb-4">About Me</h3>
+      <p>
+        Saya adalah web developer profesional yang fokus pada pembuatan website
+        modern, cepat, aman, dan responsif untuk kebutuhan bisnis dan personal.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="py-20 bg-gray-100">
+  <div class="container mx-auto px-6 text-center">
+    <h3 class="text-3xl font-bold text-primary mb-10">Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="font-bold text-xl mb-2">Web Design</h4>
+        <p>Desain profesional & UI modern.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="font-bold text-xl mb-2">Web Development</h4>
+        <p>Website cepat dan scalable.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="font-bold text-xl mb-2">Maintenance</h4>
+        <p>Support & perawatan berkelanjutan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<section class="py-20 container mx-auto px-6">
+  <h3 class="text-3xl font-bold text-primary text-center mb-10">Features</h3>
+  <div class="grid md:grid-cols-4 gap-6 text-center">
+    <div class="p-6 border rounded">Fast Performance</div>
+    <div class="p-6 border rounded">Responsive Design</div>
+    <div class="p-6 border rounded">Secure System</div>
+    <div class="p-6 border rounded">Modern UI</div>
+  </div>
+</section>
+
+<!-- ================= PROJECT ================= -->
+<section id="projects" class="py-20 bg-gray-100">
+  <div class="container mx-auto px-6">
+    <h3 class="text-3xl font-bold text-primary text-center mb-10">Projects</h3>
+    <div class="grid md:grid-cols-3 gap-6">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="rounded shadow">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="rounded shadow">
+      <img src="https://i
